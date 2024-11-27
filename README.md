@@ -3,7 +3,9 @@ Repositório para estudar postgres.
 Foi configurado dentro do docker o Postgres + PgAdmin.
 
 ## Instrução
-Para instanciar o ambiente, primeiramente criar o arquivo `.env` contendo as seguintes variáveis:
+
+### Configuração inicial
+Antes de instanciar o ambiente, primeiramente criar o arquivo `.env` contendo as seguintes variáveis:
 
 
 ```
@@ -13,3 +15,13 @@ Para instanciar o ambiente, primeiramente criar o arquivo `.env` contendo as seg
 ```
 
 Sem criar esse arquivo, a imagem do docker não será criada.  
+Assim que o docker estiver rodando, utilizar o comando `docker-compose up -d`. Se tudo estiver correto, o docker rodará o container.
+
+
+### Acessar o ambiente  
+Para acessar o PG Admin, onde será feita as manipulações no banco, acessar a página [localhost:16543](http://localhost:16543/) com o docker rodando.  
+
+Ao acessar o pgadmin, para realizar a carga inicial do banco de dados copiar o script contido [neste arquivo](comandos%20sql/create_table.sql) e executar dentro da ferramenta.
+
+## Sobre o banco de dados  
+Para este estudo, estamos utilizando a base de dados da [Northwind](https://github.com/pthom/northwind_psql).
