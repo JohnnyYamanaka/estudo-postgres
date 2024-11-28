@@ -24,4 +24,9 @@ Para acessar o PG Admin, onde será feita as manipulações no banco, acessar a 
 Ao acessar o pgadmin, para realizar a carga inicial do banco de dados copiar o script contido [neste arquivo](comandos%20sql/create_table.sql) e executar dentro da ferramenta.
 
 ## Sobre o banco de dados  
-Para este estudo, estamos utilizando a base de dados da [Northwind](https://github.com/pthom/northwind_psql).
+Para este estudo, estamos utilizando a base de dados da [Northwind](https://github.com/pthom/northwind_psql), que é um banco de dados gerado pela Microsoft para servir como amostra para os seus produtos. Contém dados de vendas de uma empresa fictícia chamada Northwind.  
+Segue abaixo o esquema do banco de dados.
+
+![Diagrama](/estudo-postgres/img/northwind-er-diagram.png "Diagrama ER")  
+
+Mais informações sobre esta base de dados pode ser consultado [aqui](https://docs.yugabyte.com/preview/sample-data/northwind/).
