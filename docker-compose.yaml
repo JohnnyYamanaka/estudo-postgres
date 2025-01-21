@@ -4,6 +4,7 @@ services:
   db_postgres:
     image: postgres
     environment:
+      POSTGRES_DB: Northwind
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
