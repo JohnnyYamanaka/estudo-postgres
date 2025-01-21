@@ -1,14 +1,16 @@
-version: '3'
+version: '3.8'
 
 services:
   db_postgres:
     image: postgres
     environment:
+      POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
       - "15432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ./Scripts/create_table.sql:/docker-entrypoint-initdb.d/create_table.sql
     networks:
       - postgres-compose-network
       
