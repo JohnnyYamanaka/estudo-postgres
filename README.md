@@ -1,6 +1,7 @@
 # Ambiente para estudar SQL
 Repositório para estudar postgres.  
 Foi configurado dentro do docker o Postgres + PgAdmin.
+Bases e exercícios baseados nas aulas do [Luciano Filho](https://github.com/lvgalvao), no [bootcamp de SQL](https://github.com/lvgalvao/data-engineering-roadmap/tree/main/Bootcamp%20-%20SQL%20e%20Analytics).
 
 ## Instrução
 
@@ -30,3 +31,11 @@ Segue abaixo o esquema do banco de dados.
 ![Diagrama](img/northwind-er-diagram.png "Diagrama ER")  
 
 Mais informações sobre esta base de dados pode ser consultado [aqui](https://docs.yugabyte.com/preview/sample-data/northwind/).
+
+## Temas explorados  
+
+- Comandos básicos de consulta (SELECT, WHERE, GROUPBY);
+- Windows Functions;
+- CTE's;
+- View's;
+- Constrains, procedures e triggers.
